@@ -1,13 +1,27 @@
 package com.filmrental.app.model;
 
+import jakarta.persistence.*;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+@Entity
+@Table(name = "payments")
 public class Payment {
     //Attributes
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "paymentID")
     private long id;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "rentalID", referencedColumnName = "rentalID")
     private Rental rental;
+
+    @Column(name = "amount", nullable = false, precision = 10, scale = 2)
     private BigDecimal amount;
+
+    @Column(name = "paymentDate", nullable = false)
     private LocalDate paymentDate;
 
     // Constructors
