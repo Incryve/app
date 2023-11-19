@@ -23,8 +23,7 @@ public class Customer {
     public Customer() {
     }
 
-    public Customer(long id, String firstName, String lastName, String email, String phone) {
-        this.id = id;
+    public Customer(String firstName, String lastName, String email, String phone) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
