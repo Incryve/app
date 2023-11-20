@@ -14,11 +14,11 @@ public class Equipmentlog {
     @Column(name = "logId")
     private long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "equipmentID", referencedColumnName = "equipmentID")
     private Equipment equipment;
 
-    @Column(name = "logText", nullable = false, length = 255)
+    @Column(name = "logText", nullable = false)
     private String logText;
 
     @Column(name = "logDate", nullable = false)
