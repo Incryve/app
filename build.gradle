@@ -29,6 +29,12 @@ tasks.named('bootBuildImage') {
 	builder = 'paketobuildpacks/builder-jammy-base:latest'
 }
 
+tasks.jar {
+	manifest {
+		attributes["Main-Class"] = "com.filmrental.app.AppApplication"
+	}
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
