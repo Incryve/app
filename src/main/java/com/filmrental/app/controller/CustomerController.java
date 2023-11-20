@@ -1,5 +1,6 @@
 package com.filmrental.app.controller;
 
+//Just a comment to commit
 import com.filmrental.app.model.Customer;
 import com.filmrental.app.service.CustomerService;
 import org.springframework.http.ResponseEntity;
