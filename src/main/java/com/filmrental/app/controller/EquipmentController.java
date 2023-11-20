@@ -41,7 +41,7 @@ public class EquipmentController {
         return ResponseEntity.ok(equipmentUpdated);
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         equipmentService.delete(id);
         return ResponseEntity.noContent().build();
