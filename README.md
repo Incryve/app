@@ -16,7 +16,7 @@
 
   **Next updates**: Payment & Rentals business logic. 
 
-  Please, feel free to test and send me any comments or suggestions!  
+  Please, feel free to test it (IDK, create a customer, a new equipment, or whatever) and send me any comments or suggestions!  
   
 # UML class diagram
 
